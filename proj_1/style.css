@@ -1,5 +1,4 @@
 * {
-
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
@@ -64,6 +63,10 @@ input {
         rgba(0, 0, 0, 0.09) 0 -3px 5px
 }
 
+input:focus{
+    outline: none;
+}
+
 .input-container {
     position: relative;
     width: 100%;
@@ -78,7 +81,7 @@ input {
 }
 
 button {
-    border: solid 0 5px rgba(255, 255, 255, 0.5);
+    border: solid 0.5px rgba(255, 255, 255, 0.05);
     background-color: transparent;
     border-radius: 5px;
     padding: 10px;
@@ -86,7 +89,7 @@ button {
 }
 
 nav {
-    border-top: solid 0 5px rgba(255, 255, 255, 0.5);
+    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
     padding: 10px;
     margin: 10px;
 }
@@ -98,4 +101,8 @@ nav {
     flex-direction: column;
     height: 100%;
 
+}
+
+.history p{
+    cursor: pointer;
 }

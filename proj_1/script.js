@@ -3,6 +3,13 @@ const API_KEY = 'sk-epFAjx3VBySPNc1CPL9YT3BLbkFJODMjVum8e5wpSPEAPaV7'
 const submitButton = document.querySelector('#submit')
 const outPutElement = document.querySelector('#output')
 const inputElement = document.querySelector('input')
+const historyElement = document.querySelector('.history')
+const buttonElement = document.querySelector('button')
+
+function changeInput(value){
+    const inputElement = document.querySelector('input')
+    inputElement.value=value
+}
 
 async function getMessage() {
     console.log('clicked');
@@ -33,4 +40,11 @@ async function getMessage() {
         console.log(error)
     }
 }
+
 submitButton.addEventListener('click', getMessage)
+
+function clearInput(){
+    inputElement.value=''
+}
+
+buttonElement.addEventListener('click', clearInput)
